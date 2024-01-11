@@ -1,5 +1,6 @@
 import { IoSearch } from "react-icons/io5";
 import { FaCircleUser } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
         <div className="bg-gray-100   " >
@@ -24,7 +25,7 @@ const Navbar = () => {
                                             Menu
                                         </summary>
                                         <ul className=" text-sm mb-2 bg-base-100 ">
-                                            <li className="hover:text-orange-400 "><a >Home</a></li>
+                                            <li className="hover:text-orange-400 "><Link to='/'><p >Home</p></Link></li>
                                             <li className="hover:text-orange-400 "><a>Details</a></li>
                                             <li className="hover:text-orange-400 "><a>Category</a></li>
                                             <li className="hover:text-orange-400 w-[20px] "><p>My <span>Favorites</span></p></li>

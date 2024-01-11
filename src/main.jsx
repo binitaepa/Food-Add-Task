@@ -7,11 +7,22 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './Layout/Home/Home';
+import AddItem from './AddItem/AddItem';
+import Root from './Layout/Root/Root';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element:<Root></Root>,
+    children:[
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+      path:'/add',
+      element:<AddItem></AddItem>
+    }]
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
