@@ -1,16 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
 
 const AddItem = () => {
     const { register, handleSubmit,reset ,formState: {errors}} = useForm();
-   const [item,setItem]=useState([]);
-    const onSubmit =(data) => {
-   console.log(data)
-   setItem(data)
    
-   console.log(item)
+   const [item,setItem]=useState([]);
+   useEffect(()=>{
+      fetch('http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10')
+      .then(res=>res.json())
+      .then(data=>setItem(data.Items))
+   },[])
+
+   const onSubmit =(data) => { 
+   
+   const newData = { ...data, Id: item.length + 1 }; // Assign a unique ID
+
+   // Using the functional form of setExistingData to update based on previous state
+   setItem(prevData => [...prevData, newData]);
+   
+   
+   
    reset()
    Swal.fire({
     position: 'center',
