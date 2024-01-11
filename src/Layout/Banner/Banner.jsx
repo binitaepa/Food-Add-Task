@@ -29,7 +29,7 @@ const Banner = () => {
                         <p className=" py-2">Authentic food| Quick Service, Fast Delivery</p>
 
                     </div>
-            <div data-aos="flip-right" data-aos-duration="1200" className="hero rounded-3xl px-20 lg:min-h-sm lg:min-w-sm mt-20  bg-orange-400 text-white">
+            <div  className="hero rounded-3xl px-20 lg:min-h-sm lg:min-w-sm mt-20  bg-orange-400 text-white">
 
                 <div className="hero-content flex-col lg:flex-row-reverse">
 

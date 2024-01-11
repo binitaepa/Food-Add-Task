@@ -20,7 +20,7 @@ const Popularcard = ({Items}) => {
     // };
     return (
         <div  className="card card-compact md:w-96 h-auto bg-transparent ">
-  <figure><img data-aos="flip-left" data-aos-duration="1200" src={ImageUrl} alt="Shoes" className="h-48  w-full rounded-xl shadow-3xl " /></figure>
+  <figure><img data-aos="flip-left" data-aos-duration="1500" src={ImageUrl} alt="Shoes" className="h-48  w-full rounded-xl shadow-3xl " /></figure>
   <div className="card-body">
     <h2 className="card-title  flex justify-center text-sm items-center">{Name}</h2>
     
