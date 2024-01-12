@@ -16,7 +16,8 @@ const Popular = () => {
     return (
         <div className="md:max-w-screen-xl mx-10 px-10 mt-10" >
             <div className="flex justify-between">
-            <h2 className="mb-3 text-lg ">Popular</h2>
+            <h2 className=" mb-3 text-lg ">Popular</h2>
+           
            <Link to='/add'> <button className="text-x-sm btn p-2 m-2 lg:text-white lg:bg-orange-400">Add More <IoIosArrowForward></IoIosArrowForward> </button></Link>
             </div>
        <div className=" hidden lg:flex lg:flex-cols-5  gap-2">
@@ -25,7 +26,7 @@ const Popular = () => {
         item.slice(0,5).map(Items=><Popularcard key={Items.Id} Items={Items}></Popularcard>)
        }
        </div>
-       <div className=" lg:hidden  grid grid-cols-3 w-80 gap-2">
+       <div className=" lg:hidden  grid grid-cols-3 -ml-10 w-80 gap-2">
         
        {
         item.slice(0,3).map(Items=><Popularcard key={Items.Id} Items={Items}></Popularcard>)
@@ -40,7 +41,7 @@ const Popular = () => {
         popular.slice(0,5) .map(Items=><Popularcard key={Items.Id} Items={Items}></Popularcard>)
        }
       </div>
-      <div className=" lg:hidden  grid grid-cols-3 w-80  gap-2">
+      <div className=" lg:hidden  grid grid-cols-3 w-80 -ml-10 gap-2">
         
        {
         popular.slice(0,3).map(Items=><Popularcard key={Items.Id} Items={Items}></Popularcard>)

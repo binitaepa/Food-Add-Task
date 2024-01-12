@@ -17,7 +17,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="lg:flex-none  lg:mr-10">
-                            <ul className="menu menu-horizontal  p-10 text-sm md:w-full">
+                            <ul className="menu menu-horizontal  lg:p-10 text-sm md:w-full">
 
                                 <li className="bg-white rounded-md">
                                     <details>
