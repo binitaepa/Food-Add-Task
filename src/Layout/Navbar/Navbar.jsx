@@ -5,18 +5,18 @@ const Navbar = () => {
     return (
         <div className="bg-gray-100   " >
             <div className="   ">
-                <div className="flex md:justify-around items-center ">
+                <div className="flex gap-0 md:justify-around items-center ">
                     <div className="justify-start" >
                         <a className="btn btn-ghost text-xl font-extrabold">pti.</a>
                     </div>
                     <div className="flex items-center ">
-                        <div className="ml-10 justify-center">
+                        <div className="lg:ml-10 justify-center">
                             <div className="relative  items-center justify-center">
                                 <p className="absolute mt-2 mx-2 mr-5"><IoSearch className='text-orange-400 text-2xl'></IoSearch></p>
                                 <input type="text" placeholder="   Search Audiobook" className="input input-bordered px-5 input-sm md:w-[300px] h-[40px] max-w-xs" />
                             </div>
                         </div>
-                        <div className="flex-none  mr-10">
+                        <div className="lg:flex-none  lg:mr-10">
                             <ul className="menu menu-horizontal  p-10 text-sm md:w-full">
 
                                 <li className="bg-white rounded-md">

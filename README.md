@@ -1,8 +1,11 @@
-# React + Vite
+# React Based Project( Food Add or .pti)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I Have used  react.js,Tailwind css here.
+Live Link : 
+Feature:
 
-Currently, two official plugins are available:
+- This website is based on food suggestion basically a user can see popular and recommended food here.
+- One can add his food on clicking Add More button. Clicking Add more button will redirect the user on a add page.
+- Clicking Add food the food will be save on storage. Also a notification will pop up.
+- Clicking on the menu home route will redirect the user to the home page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

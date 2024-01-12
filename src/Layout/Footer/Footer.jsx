@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="bg-amber-500 ">
             <footer className="lg:hidden footer footer-center p-10 bg-amber-500 text-base-content rounded">
-            <div className="relative w-1/2">
+            <div className="relative w-full">
                     <input
                         type="text"
                         placeholder="Enter Your Email"
